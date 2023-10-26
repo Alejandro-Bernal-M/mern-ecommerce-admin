@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 
 function Signin() {
   return (
-    <Form style={{padding: '5rem'}}>
+    <Form style={{padding: '5rem 0'}}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
