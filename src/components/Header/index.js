@@ -4,11 +4,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+
 function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-primary">
         <Container>
-          <Navbar.Brand href="#home">Admin dashboard</Navbar.Brand>
+          <Navbar.Brand href="/">Admin dashboard</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -27,10 +28,8 @@ function Header() {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">Sign in</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
+              <Nav.Link href="/signin">Sign in</Nav.Link>
+              <Nav.Link href="/signup">Sign up</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
